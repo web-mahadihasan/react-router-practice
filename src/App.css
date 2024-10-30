@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.app-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 50vh;
+  gap: 20px;
+}
+a.active{
+  background-color:coral;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+.column{
+  grid-column: span 2;
+  border: 1px solid red;
+  width: 100%;
+  padding: 5px;
+}
+.usersStyle{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.border-nav{
+  border: 1px solid purple;
+  padding: 10px;
+}
+.footer{
+  width: 100%;
+  border: 1px solid yellow;
+  padding: 10px;
+}
+.list{
+  margin-right: 10px;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
